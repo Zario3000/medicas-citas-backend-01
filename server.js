@@ -10,6 +10,11 @@ const medicoPublicRoutes = require('./src/routes/medico.public.routes');
 const pacienteRoutes = require('./src/routes/paciente.routes');
 
 
+app.get('/', (req, res) => {
+  res.send('API de Citas Médicas UNAMBA funcionando correctamente');
+});
+
+
 app.use('/api/paciente', pacienteRoutes);
 
 
